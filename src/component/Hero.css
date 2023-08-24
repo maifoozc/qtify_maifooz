@@ -1,0 +1,11 @@
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    color: #fff;
+}
+
+.hero > img{
+    width: 12rem;
+}

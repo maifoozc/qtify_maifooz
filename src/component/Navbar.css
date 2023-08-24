@@ -1,0 +1,11 @@
+.navabar{
+    background-color: #34C94B;
+    color: #121212;
+ 
+}
+.navabar_content{
+display: flex;
+justify-content: space-between;
+margin:0 1rem;
+padding: 1rem;
+}
