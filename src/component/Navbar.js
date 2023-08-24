@@ -6,10 +6,10 @@ import SearchIcon from "@mui/icons-material/Search";
 
 export default function Navbar() {
   return (
-    <div className="navabar">
+    <div className="navbar">
       <div className="navabar_content">
         <img src={Logo} alt='logo'/>
-        <div>
+        <div style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
           <TextField
             variant="outlined"
             size="small"
