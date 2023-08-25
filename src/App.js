@@ -2,6 +2,7 @@ import "./App.css";
 import CardComponent from "./component/CardComponent";
 import Hero from "./component/Hero";
 import Navbar from "./component/Navbar";
+import NewAlbums from "./component/NewAlbums";
 import TopAlbum from "./component/TopAlbum";
 
 function App() {
@@ -9,7 +10,8 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
-     <TopAlbum/>
+      <TopAlbum />
+      <NewAlbums />
     </div>
   );
 }
