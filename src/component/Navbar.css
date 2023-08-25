@@ -1,13 +1,12 @@
-.navbar{
-    background-color: #34C94B;
-    color: #121212;
-    
- 
+.navbar {
+  background-color: #34c94b;
+  color: #121212;
 }
-.navabar_content{
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin:0 1rem;
-padding: 1rem;
+.navabar_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem;
+  padding: 1rem;
 }

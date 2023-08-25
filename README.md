@@ -1,1 +1,0 @@
-# qtify_maifooz

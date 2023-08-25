@@ -1,6 +1,6 @@
 import "./Navbar.css";
 import Logo from '../assets/Logo.png';
-import { Button, IconButton, TextField, Typography } from "@material-ui/core";
+import { Button, IconButton, TextField } from "@material-ui/core";
 import SearchIcon from "@mui/icons-material/Search";
 
 
