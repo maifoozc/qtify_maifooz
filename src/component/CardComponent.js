@@ -24,7 +24,7 @@ export default function CardComponent({ image, followers, title ,ifSong}) {
           </Typography>
         </CardContent>
       </Card>
-      <Typography style={{display:'flex', justifyContent:'left'}}>{title}</Typography>
+      <Typography style={{display:'flex', justifyContent:'left',textAlign:'left'}}>{title}</Typography>
     </div>
   );
 }
