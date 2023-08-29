@@ -38,8 +38,8 @@ export default function TabFilterComponent() {
       <Swiper
         modules={[Navigation]}
         slidesPerView={6}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
+        //   onSlideChange={() => console.log("slide change")}
+        // onSwiper={(swiper) => console.log(swiper)}
         navigation
         swiper-button-size="20px"
       >
@@ -64,7 +64,7 @@ export default function TabFilterComponent() {
   };
 
   return (
-    <div style={{ backgroundColor: "#121212", color: "#fff" }}>
+    <div style={{ backgroundColor: "#121212", color: "#fff", paddingTop:'1rem' }}>
       <div style={{ margin: "0 1rem" }}>
         <Typography
           style={{ color: "#fff", display: "flex", justifyContent: "left" }}

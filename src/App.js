@@ -1,5 +1,4 @@
 import "./App.css";
-import CardComponent from "./component/CardComponent";
 import FAQ from "./component/FAQ";
 import Hero from "./component/Hero";
 import Navbar from "./component/Navbar";
@@ -16,6 +15,7 @@ function App() {
       <NewAlbums />
       <TabFilterComponent/>
       <FAQ />
+    
     </div>
   );
 }

@@ -13,7 +13,7 @@ export default function NewAlbums() {
   let fetchData = async () => {
     try {
       let response = await axios.get(newAlbumAPI);
-      console.log(response.data);
+    //  console.log(response.data);
       setData(response.data);
     } catch (err) {
       console.error("error while fetching top albums", err);
@@ -31,7 +31,7 @@ export default function NewAlbums() {
   };
 
   return (
-    <div style={{ backgroundColor: "#121212", color: "#fff" }}>
+    <div style={{ backgroundColor: "#121212", color: "#fff",paddingTop:'1rem'  }}>
       <div style={{ margin: "0 1rem" }}>
         <div style={{ display: "flex", justifyContent: "space-between" }}>
           <Typography>New Albums</Typography>
@@ -55,6 +55,7 @@ export default function NewAlbums() {
                           followers={e.follows}
                           title={e.title}
                           ifSong={false}
+                          noOfSong={e.songs.length}
                         />
                       </div>
                     );
@@ -65,8 +66,8 @@ export default function NewAlbums() {
             <Swiper
               modules={[Navigation]}
               slidesPerView={6}
-              onSlideChange={() => console.log("slide change")}
-              onSwiper={(swiper) => console.log(swiper)}
+              //   onSlideChange={() => console.log("slide change")}
+              // onSwiper={(swiper) => console.log(swiper)}
               navigation
               swiper-button-size="20px"
             >

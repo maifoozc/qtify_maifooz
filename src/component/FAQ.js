@@ -8,6 +8,7 @@ import { useState } from "react";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 
+
 export default function FAQ() {
   const [expanded, setExpanded] = useState(false);
 

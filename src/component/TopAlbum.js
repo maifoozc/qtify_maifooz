@@ -23,16 +23,16 @@ export default function TopAlbum() {
   useEffect(() => {
     fetchData();
   }, []);
+ 
 
   const [showAll, setShowAll] = useState(false);
 
   const showButtonToggle = () => {
     setShowAll(!showAll);
   };
-  
 
   return (
-    <div style={{ backgroundColor: "#121212", color: "#fff" }}>
+    <div style={{ backgroundColor: "#121212", color: "#fff"  }}>
       <div style={{ margin: "0 1rem" }}>
         <div style={{ display: "flex", justifyContent: "space-between" }}>
           <Typography>Top Albums</Typography>
@@ -40,7 +40,7 @@ export default function TopAlbum() {
             style={{ textTransform: "none", color: "#34c84b" }}
             onClick={showButtonToggle}
           >
-            {showAll?('Show Less'):('Show All')}
+            {showAll ? "Show Less" : "Show All"}
           </Button>
         </div>
 
@@ -56,6 +56,7 @@ export default function TopAlbum() {
                           followers={e.follows}
                           title={e.title}
                           ifSong={false}
+                          noOfSong={e.songs.length}
                         />
                       </div>
                     );
@@ -66,8 +67,8 @@ export default function TopAlbum() {
             <Swiper
               modules={[Navigation]}
               slidesPerView={6}
-              onSlideChange={() => console.log("slide change")}
-              onSwiper={(swiper) => console.log(swiper)}
+              // onSlideChange={() => console.log("slide change")}
+              // onSwiper={(swiper) => console.log(swiper)}
               navigation
               swiper-button-size="20px"
             >
